@@ -1,6 +1,4 @@
-# mavon-show
-
-> 展示mavonEditor
+# 在Vue-cli中使用mavon-editor
 
 
 
