@@ -252,7 +252,8 @@ export default {
             d_preview_imgsrc: null, // 图片预览地址
             s_external_link: {
                 markdown_css: function() {
-                    return 'https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.9.0/github-markdown.min.css';
+                    // return 'https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.9.0/github-markdown.min.css';
+										return '';
                 },
                 hljs_js: function() {
                     return 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js';
@@ -321,6 +322,7 @@ export default {
 
         if (!(typeof $vm.externalLink === 'object'&& typeof $vm.externalLink['markdown_css'] === 'function')) {
             // 没有外部文件要来接管markdown样式，可以更改markdown样式。
+						console.log('没有外部文件要来接管markdown样式，可以更改markdown样式')
             $vm.codeStyleChange($vm.codeStyle, true)
         }
     },
@@ -673,6 +675,7 @@ export default {
 <style lang="stylus" rel="stylesheet/stylus">
     @import "lib/css/scroll.styl"
     @import "lib/css/mavon-editor.styl"
+    @import "lib/css/markdown.css"
 </style>
 <style lang="css" scoped>
     .auto-textarea-wrapper {

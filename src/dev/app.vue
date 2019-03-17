@@ -269,5 +269,5 @@
 @import "../stylus/app"
 .test
 	background-color: #303030;
-	color: #fff;
+	color: #ff0000;
 </style>
