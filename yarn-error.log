@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/9.7.1/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js
+  /usr/local/Cellar/node/9.7.1/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js dev
 
 PATH: 
   /Users/apple/.rvm/gems/ruby-2.3.3/bin:/Users/apple/.rvm/gems/ruby-2.3.3@global/bin:/Users/apple/.rvm/rubies/ruby-2.3.3/bin:/usr/libexec/java_home/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/usr/local/git/bin:/usr/local/bin::/Users/apple/Documents/Java_projects/apache-maven-3.5.3/bin:/Users/apple/Go/bin:/Users/apple/.config/yarn/global/node_modules/.bin:/Users/apple/.rvm/bin
@@ -15,8 +15,8 @@ Platform:
 
 npm manifest: 
   {
-    "name": "mavon-editor",
-    "version": "2.7.1",
+    "name": "mavon-editor-uncolor",
+    "version": "2.7.2",
     "description": "Vue markdown editor",
     "main": "dist/mavon-editor.js",
     "scripts": {
@@ -27,7 +27,7 @@ npm manifest:
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/hinesboy/mavonEditor.git"
+      "url": "git+https://github.com/zzcwzhang/mavonEditor.git"
     },
     "keywords": [
       "javascript",
@@ -36,7 +36,7 @@ npm manifest:
       "editor",
       "html"
     ],
-    "author": "hinesboy",
+    "author": "zzcwzhang",
     "license": "MIT",
     "bugs": {
       "url": "https://github.com/hinesboy/mavonEditor/issues"
@@ -6701,9 +6701,16 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: https://registry.yarnpkg.com/progress/-/progress-2.0.0.tgz: ETIMEDOUT
-      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:133094:19)
-      at ontimeout (timers.js:436:11)
-      at tryOnTimeout (timers.js:300:5)
-      at listOnTimeout (timers.js:263:5)
-      at Timer.processTimers (timers.js:223:10)
+  Error: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c webpack-dev-server --open --progress --config webpack/webpack.dev.js
+  Directory: /Users/apple/Documents/JS_projects/mavonEditor
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:182:13)
+      at maybeClose (internal/child_process.js:962:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:251:5)
