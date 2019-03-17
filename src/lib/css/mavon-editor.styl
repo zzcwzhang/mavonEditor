@@ -1,7 +1,6 @@
-  border-color = 1px solid #e0e0e0
+  border-color = 1px solid
   op-height = 40px
   textarea:disabled
-    background-color #ffffff
 
   /* 路由内容 */
   .v-note-wrapper
@@ -11,7 +10,7 @@
     display flex
     flex-direction column
     transition all 0.3s linear 0s
-    background #fff
+		/* background #ff0000 */
     z-index 1500
     text-align left
     &.fullscreen
@@ -110,7 +109,6 @@
           box-sizing border-box
           outline 0 none
           border none !important
-          color #2c3e50
           font-size 16px
         .content-input-wrapper
           width 100%
@@ -167,11 +165,8 @@
             box-shadow 0 0px 1px rgba(0, 0, 0, .156863), 0 0px 1px rgba(0, 0, 0, .227451)
           .v-note-navigation-close
             float right
-            color #757575
             font-size 20px
             cursor pointer
-            &:hover
-              color #696969
         .v-note-navigation-content
           overflow-y auto
           flex 1
@@ -181,7 +176,6 @@
             margin 2px 0
             font-weight 500
             font-size 17px
-            color #2185d0
             cursor pointer
             line-height normal
             overflow hidden
@@ -189,8 +183,6 @@
             white-space nowrap
             padding 0 12px
             border-bottom none
-            &:hover
-              color #483D8B
               text-decoration-line underline
           h2
             padding-left  27px
@@ -250,10 +242,7 @@
       position absolute
       right 15px
       top 8px
-      color rgba(0, 0, 0, 0.7)
       cursor pointer
-      &:hover
-        color rgba(0, 0, 0, 1)
     .v-note-help-show
       width 100%
       height 100%
@@ -288,8 +277,5 @@
     position absolute
     right 15px
     top 8px
-    color rgba(255, 255, 255, 0.7)
     cursor pointer
-    &:hover
-      color rgba(255, 255, 255, 1)
 align()

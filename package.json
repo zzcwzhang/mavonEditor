@@ -1,6 +1,6 @@
 {
-  "name": "mavon-editor",
-  "version": "2.7.1",
+  "name": "zzcwzhang/mavon-editor",
+  "version": "2.7.2",
   "description": "Vue markdown editor",
   "main": "dist/mavon-editor.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hinesboy/mavonEditor.git"
+    "url": "git+https://github.com/zzcwzhang/mavonEditor.git"
   },
   "keywords": [
     "javascript",
@@ -20,7 +20,7 @@
     "editor",
     "html"
   ],
-  "author": "hinesboy",
+  "author": "zzcwzhang",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hinesboy/mavonEditor/issues"
