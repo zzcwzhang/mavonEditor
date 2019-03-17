@@ -307,26 +307,11 @@ export default {
         // fullscreen事件
         fullscreenchange(this);
         this.d_value = this.value;
-        // 将help添加到末尾
-        document.body.appendChild(this.$refs.help);
-        $vm.loadExternalLink('markdown_css', 'css');
-        $vm.loadExternalLink('katex_css', 'css')
-        $vm.loadExternalLink('katex_js', 'js', function() {
-            $vm.initLanguage();
-            $vm.iRender();
-        })
-        $vm.loadExternalLink('hljs_js', 'js', function() {
-            $vm.initLanguage();
-            $vm.iRender();
-        })
 
         if (!(typeof $vm.externalLink === 'object'&& typeof $vm.externalLink['markdown_css'] === 'function')) {
             // 没有外部文件要来接管markdown样式，可以更改markdown样式。
             $vm.codeStyleChange($vm.codeStyle, true)
         }
-    },
-    beforeDestroy() {
-        document.body.removeChild(this.$refs.help);
     },
     getMarkdownIt() {
         return this.mixins[0].data().markdownIt
